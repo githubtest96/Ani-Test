@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cinema_id: 
+  film_id: 
+  hall_id: 
+  start_date: 2020-11-12 13:21:56
+
+two:
+  cinema_id: 
+  film_id: 
+  hall_id: 
+  start_date: 2020-11-12 13:21:56

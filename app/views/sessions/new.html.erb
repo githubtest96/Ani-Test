@@ -1,0 +1,36 @@
+<form id="add-new-session">
+  <div id="cinema-selector">
+    <label for="cars">Please choose a Cinema: </label>
+
+    <select id="cinema-options">
+      <option value="" selected disabled>Select</option>
+      <% @cinemas.each do |cinema| %>
+          <option value="<%= cinema.id %>"><%= cinema.name %></option>
+      <% end %>
+
+    </select>
+  </div>
+
+  <div id="hall-selector">
+    <label for="cars">Please choose a Hall: </label>
+
+    <select id="hall-options">
+    </select>
+  </div>
+
+  <div id="film-selector">
+    <label for="cars">Please choose a Film: </label>
+
+    <select id="film-options">
+    </select>
+  </div>
+
+  <div id="additional-inputs" style="display: none;">
+    <label for="cars">Start Date: </label>
+    <input id="start-date-input" type="datetime-local" name="start-date">
+    <input id="NS-form-button" type="submit" value="Save" />
+  </div>
+
+
+</form>
+

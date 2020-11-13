@@ -1,0 +1,19 @@
+<p>Schedule</p>
+
+
+<% @sessions.each do |session| %>
+    <div>
+      <h4>Cinema name: <%= session.cinema.name %></h4>
+    </div>
+    <div>
+      <p>Hall name: <%= session.hall.name %></p>
+    </div>
+    <div>
+      <p>Film name: <%= session.film.name %></p>
+    </div>
+    <div>
+      <p>Film duration: <%= session.film.duration %></p>
+    </div>
+
+    <%= link_to 'Book Now', session_hall_path(session.id, session.hall.id) %>
+<% end %>

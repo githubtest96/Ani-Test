@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cinema_id: one
+  name: MyString
+  total_rows: 1
+  total_columns: 1
+
+two:
+  cinema_id: two
+  name: MyString
+  total_rows: 1
+  total_columns: 1

@@ -1,0 +1,19 @@
+<h3>Cinema:  <%= @hall.cinema.name %></h3>
+
+<div id="hall-container" data-hall-id="<%= @hall.id %>">
+<% (1..@hall.total_rows).to_a.each do |row_index| %>
+  <% (1..@hall.total_columns).to_a.each do |col_index| %>
+        <input
+          class="book-event"
+          type="checkbox"
+          data-row="<%= row_index %>"
+          data-col="<%= col_index %>"
+          <% if @session_bookings.any? {|booking| booking.row == row_index && booking.column == col_index  } %>
+          checked
+          disabled
+          <% end %>
+          >
+  <% end %>
+    <br>
+<% end %>
+</div>
